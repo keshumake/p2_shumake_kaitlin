@@ -7,6 +7,16 @@
 
     <link rel="stylesheet" href="CSS/styles.css" />
 
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
     <title>Whale Sharks</title>
   </head>
   <body>
@@ -51,8 +61,7 @@
             set rearward on its body, which ends in a large dual-lobbed caudal
             fin (or tail).
           </p>
-      </div>
-
+        </div>
 
         <aside>
           <h2>Did you know?</h2>
@@ -78,13 +87,16 @@
         </aside>
       </div>
 
-    <div class="photos">
-      <section>
-      <img src="./images/superblue.jpg" alt="Super Blue Shark">
-      <img src="./images/gallery1.jpg" alt="Whale Shark 1">
-      <img src="./images/gallery2.jpg" alt="Whale Shark 2">
-    </section>
-  </div>
+      <div class="fotorama"  data-width="800" data-height="600">
+          <img src="./images/superblue.jpg" alt="Super Blue Shark" />
+          <img src="./images/gallery1.jpg" alt="Whale Shark 1" />
+          <img src="./images/gallery2.jpg" alt="Whale Shark 2" />
+          <img src="./images/whaleshark1.jpg" alt="Blue Shark" />
+          <img src="./images/whaleshark2.jpg" alt="Whale Shark 2" />
+          <img src="./images/whaleshark3.jpg" alt="Whale Shark 3" />
+          <img src="./images/whaleshark4.jpg" alt="Whale Shark 4" />
+
+      </div>
     </div>
 
     <footer>

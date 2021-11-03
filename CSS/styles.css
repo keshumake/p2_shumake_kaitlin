@@ -275,6 +275,14 @@ aside p {
   margin: 0 auto;
 }
 
+.fotorama {
+  min-width: 1px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /* about page */
 
 #aboutcontainer {
