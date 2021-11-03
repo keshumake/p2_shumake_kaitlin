@@ -292,13 +292,14 @@ aside p {
 }
 
 .aboutpage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
   background-color: #e0e0e0;
-  margin: 0 auto;
   font-size: 0.875rem;
   line-height: 1.25em;
-  margin: 0 auto;
   padding: 2%;
-  width: 50%;
   border-radius: 1em;
 }
 
