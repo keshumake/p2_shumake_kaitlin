@@ -232,7 +232,7 @@ nav a:active {
 aside h2,
 .textbox h2,
 .aboutpage h2,
-.gallery h2 {
+.gallery h2, .links h2 {
   font-family: "Varela Round", sans-serif;
   color: #0188d1;
   text-transform: uppercase;
@@ -285,6 +285,7 @@ aside p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: baseline;
   padding: 1em;
 }
 
@@ -338,7 +339,20 @@ figcaption {
 #whalefacts img {
   width: 50%;
   max-width: 600px;
+  padding-left: 0.5em;
 }
+
+.natgeovideo {
+  padding-top: 7em;
+  margin: 0 auto;
+  width: 100%;
+}
+
+iframe.ui-droppable {
+  margin: 0 auto;
+}
+
+
 
 /* gallery page */
 .gallery {
@@ -368,12 +382,54 @@ figcaption {
   border-radius: 8px;
 }
 
+/* links page */
+
+.links {
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 2em 3em;
+  margin: 3em;
+  background-color: #e0e0e0;
+}
+
+.links img {
+  max-width: 750px;
+  padding-bottom: 1em;
+}
+
+.links h1 {
+  font-family: "Varela Round", sans-serif;
+  color: #0188d1;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+.links a {
+  text-decoration: underline dotted;
+  color: #0188d1;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+
+.whalelinks {
+  width: 50%;
+}
+
+
 /* footer */
 
 footer {
   clear: both;
   margin-top: 2rem;
-  position: fixed;
+  position: relative;
   width: 100%;
 }
 
@@ -439,6 +495,8 @@ footer h3 {
     float: right;
     display: block;
   }
+
+
 }
 
 @media screen and (min-width: 750px) {
@@ -447,7 +505,7 @@ footer h3 {
     padding: 0 15%;
   }
 
-  .maincontent {
+  .maincontent, .links {
     flex-direction: row;
   }
 
@@ -461,5 +519,9 @@ footer h3 {
 
   #whalefacts {
     margin-left: 1em;
+  }
+  
+  #whalefacts img {
+    width: 15em;
   }
 }
