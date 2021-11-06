@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="CSS/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- jQuery 1.8 or later, 33 KB -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="CSS/styles.css" />
 
-    <!-- Fotorama from CDNJS, 19 KB -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <!-- jQuery 1.8 or later, 33 KB -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <title>Whale Sharks</title>
-  </head>
-  <body>
-    <div id="container">
-      <header class="mainheader">
-        <h1>Whale Sharks</h1>
+  <!-- Fotorama from CDNJS, 19 KB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./links.html">Links</a></li>
-          </ul>
-        </nav>
-      </header>
+  <title>Whale Sharks</title>
+</head>
 
-      <div class="maincontent">
-        <div class="textbox">
-          <h2>About the Whale Shark</h2>
-          <img src="./images/sea.png" alt="Sea icon" />
-          <p>
-            The whale shark is a slow-moving, filter-feeding carpet shark and
-            the largest known extant fish species. The largest confirmed
-            individual had a length of 18.8 m. The whale shark holds many
-            records for size in the animal kingdom, most notably being by far
-            the largest living nonmammalian vertebrate.
-          </p>
-          <p>
-            Whale sharks (Rhincodon typus) are the largest shark, and indeed
-            largest of any fishes alive today. They feed on plankton and travel
-            large distances to find enough food to sustain their huge size, and
-            to reproduce. Whale sharks are found in all the tropical oceans of
-            the world. Their white spotted colouration makes these gentle giants
-            easy to distinguish, and popular with snorkelers and divers at sites
-            where they aggregate off the coast.
-          </p>
-          <p>
-            The whale shark's flattened head sports a blunt snout above its
-            mouth with short barbels protruding from its nostrils. Its back and
-            sides are gray to brown with white spots among pale vertical and
-            horizontal stripes, and its belly is white. Its two dorsal fins are
-            set rearward on its body, which ends in a large dual-lobbed caudal
-            fin (or tail).
-          </p>
-        </div>
+<body>
+  <div id="container">
+    <header class="mainheader">
+      <h1>Whale Sharks</h1>
 
-        <aside>
-          <h2>Did you know?</h2>
-          <img src="./images/wave.png" alt="Ocean Wave" />
-          <p>
-            Like human fingerprints, whale sharks have a unique pattern of spots
-            which allow individual sharks to be identified. By taking photos and
-            cataloguing them,
-            <a href="https://www.worldwildlife.org/species/whale-shark">WWF</a>
-            has identified 458 different whale sharks in the Philippines.
-          </p>
-          <p>
-            Females give birth to live young but this has never been observed.
-          </p>
-          <p>
-            Where pupping occurs and where the youngest animals situate remains
-            a mystery, as they are very rarely found.
-          </p>
-          <p>
-            Adults are often found feeding at the surface, but may dive to
-            1000m.
-          </p>
-        </aside>
+      <nav class="topnav" id="myTopnav">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./links.html">Links</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+      </nav>
+    </header>
+
+    <div class="maincontent">
+      <div class="textbox">
+        <h2>About the Whale Shark</h2>
+        <img src="./images/sea.png" alt="Sea icon" />
+        <p>
+          The whale shark is a slow-moving, filter-feeding carpet shark and
+          the largest known extant fish species. The largest confirmed
+          individual had a length of 18.8 m. The whale shark holds many
+          records for size in the animal kingdom, most notably being by far
+          the largest living nonmammalian vertebrate.
+        </p>
+        <p>
+          Whale sharks (Rhincodon typus) are the largest shark, and indeed
+          largest of any fishes alive today. They feed on plankton and travel
+          large distances to find enough food to sustain their huge size, and
+          to reproduce. Whale sharks are found in all the tropical oceans of
+          the world. Their white spotted colouration makes these gentle giants
+          easy to distinguish, and popular with snorkelers and divers at sites
+          where they aggregate off the coast.
+        </p>
+        <p>
+          The whale shark's flattened head sports a blunt snout above its
+          mouth with short barbels protruding from its nostrils. Its back and
+          sides are gray to brown with white spots among pale vertical and
+          horizontal stripes, and its belly is white. Its two dorsal fins are
+          set rearward on its body, which ends in a large dual-lobbed caudal
+          fin (or tail).
+        </p>
       </div>
 
-      <div class="fotorama"  data-width="800" data-height="600">
-          <img src="./images/superblue.jpg" alt="Super Blue Shark" />
-          <img src="./images/gallery1.jpg" alt="Whale Shark 1" />
-          <img src="./images/gallery2.jpg" alt="Whale Shark 2" />
-          <img src="./images/whaleshark1.jpg" alt="Blue Shark" />
-          <img src="./images/whaleshark2.jpg" alt="Whale Shark 2" />
-          <img src="./images/whaleshark3.jpg" alt="Whale Shark 3" />
-          <img src="./images/whaleshark4.jpg" alt="Whale Shark 4" />
-
-      </div>
+      <aside>
+        <h2>Did you know?</h2>
+        <img src="./images/wave.png" alt="Ocean Wave" />
+        <p>
+          Like human fingerprints, whale sharks have a unique pattern of spots
+          which allow individual sharks to be identified. By taking photos and
+          cataloguing them,
+          <a href="https://www.worldwildlife.org/species/whale-shark">WWF</a>
+          has identified 458 different whale sharks in the Philippines.
+        </p>
+        <p>
+          Females give birth to live young but this has never been observed.
+        </p>
+        <p>
+          Where pupping occurs and where the youngest animals situate remains
+          a mystery, as they are very rarely found.
+        </p>
+        <p>
+          Adults are often found feeding at the surface, but may dive to
+          1000m.
+        </p>
+      </aside>
     </div>
 
-    <footer>
-      <h3>Designed by Kaitlin Shumake, 2021.</h3>
-    </footer>
-  </body>
+    <div class="fotorama" data-width="800" data-height="600">
+      <img src="./images/superblue.jpg" alt="Super Blue Shark" />
+      <img src="./images/gallery1.jpg" alt="Whale Shark 1" />
+      <img src="./images/gallery2.jpg" alt="Whale Shark 2" />
+      <img src="./images/whaleshark1.jpg" alt="Blue Shark" />
+      <img src="./images/whaleshark2.jpg" alt="Whale Shark 2" />
+      <img src="./images/whaleshark3.jpg" alt="Whale Shark 3" />
+      <img src="./images/whaleshark4.jpg" alt="Whale Shark 4" />
+
+    </div>
+  </div>
+
+  <footer>
+    <h3>Designed by Kaitlin Shumake, 2021.</h3>
+  </footer>
+
+  <!-- javascript -->
+
+  <script>
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
 </html>

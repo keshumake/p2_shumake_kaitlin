@@ -1,84 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="CSS/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Whale Sharks</title>
-  </head>
-  <body>
-    <div id="aboutcontainer">
-      <header class="otherheader">
-        <h1>Whale Sharks</h1>
+  <!--hamburger menu-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
 
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./links.html">Links</a></li>
-          </ul>
-        </nav>
-      </header>
 
-      <div class="aboutpage">
-        <img
-          src="./images/verticalshark.jpg"
-          alt="Super blue picture of whale shark" id="sideimage"
-        />
-        <h2>About the whale shark</h2>
-        <p>
-          The whale shark is a slow-moving, filter-feeding carpet shark and the
-          largest known extant fish species. The largest confirmed individual
-          had a length of 18.8 m. The whale shark holds many records for size in
-          the animal kingdom, most notably being by far the largest living
-          nonmammalian vertebrate.
-        </p>
-        <p>
-          Preferring warm waters, whale sharks populate all tropical seas. They
-          are known to migrate every spring to the continental shelf of the
-          central west coast of Australia. The coral spawning of the area's
-          Ningaloo Reef provides the whale shark with an abundant supply of
-          plankton.
-        </p>
+  <link rel="stylesheet" href="CSS/styles.css" />
 
-        <p>
-          Although massive, whale sharks are docile fish and sometimes allow
-          swimmers to hitch a ride. They are currently listed as a vulnerable
-          species; however, they continue to be hunted in parts of Asia, such as
-          the Philippines.
-        </p>
-        <h2>Why do whale sharks matter?</h2>
-        <p>
-          The whale shark is the biggest fish and shark in the world. These
-          gentle marine giants roam the oceans around the globe, generally
-          alone. However, large numbers of whale sharks often gather in areas
-          with abundant plankton food—making them prime tourist attractions.The
-          distribution of whale sharks indicates the presence of plankton and
-          the overall health of our oceans.
-        </p>
-        <p>
-          Whale sharks are highly valued on international markets. Demand for
-          their meat, fins and oil remains a threat to the species, particularly
-          by unregulated fisheries. They are victims of bycatch, the accidental
-          capture of non-target species in fishing gear. And whale shark tourism
-          presents a threat to the species as it can interrupt their feeding and
-          sharks can be injured by boat propellers.
-        </p>
+  <title>Whale Sharks</title>
+</head>
 
-        <div class="figure">
+<body>
+  <header class="otherheader">
+    <h1>Whale Sharks</h1>
+
+    <nav class="topnav" id="myTopnav">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./links.html">Links</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+    </nav>
+  </header>
+  <div id="aboutcontainer">
+    <section class="aboutpage">
+      <img src="./images/verticalshark.jpg" alt="Super blue picture of whale shark" id="sideimage" />
+      <h2>About the whale shark</h2>
+      <p>
+        The whale shark is a slow-moving, filter-feeding carpet shark and the
+        largest known extant fish species. The largest confirmed individual
+        had a length of 18.8 m. The whale shark holds many records for size in
+        the animal kingdom, most notably being by far the largest living
+        nonmammalian vertebrate.
+      </p>
+      <p>
+        Preferring warm waters, whale sharks populate all tropical seas. They
+        are known to migrate every spring to the continental shelf of the
+        central west coast of Australia. The coral spawning of the area's
+        Ningaloo Reef provides the whale shark with an abundant supply of
+        plankton.
+      </p>
+
+      <p>
+        Although massive, whale sharks are docile fish and sometimes allow
+        swimmers to hitch a ride. They are currently listed as a vulnerable
+        species; however, they continue to be hunted in parts of Asia, such as
+        the Philippines.
+      </p>
+      <h2>Why do whale sharks matter?</h2>
+      <p>
+        The whale shark is the biggest fish and shark in the world. These
+        gentle marine giants roam the oceans around the globe, generally
+        alone. However, large numbers of whale sharks often gather in areas
+        with abundant plankton food—making them prime tourist attractions.The
+        distribution of whale sharks indicates the presence of plankton and
+        the overall health of our oceans.
+      </p>
+      <p>
+        Whale sharks are highly valued on international markets. Demand for
+        their meat, fins and oil remains a threat to the species, particularly
+        by unregulated fisheries. They are victims of bycatch, the accidental
+        capture of non-target species in fishing gear. And whale shark tourism
+        presents a threat to the species as it can interrupt their feeding and
+        sharks can be injured by boat propellers.
+      </p>
+
+      <div class="figure">
         <figure>
           <img src="./images/whalesharkscale.png" alt="Whale Shark Scale" id="whalescale">
           <figcaption>The size and growth of the whale shark.</figcaption>
         </figure>
-        </div>
       </div>
-    </div>
+    </section>
 
-    <footer>
-      <h3>Designed by Kaitlin Shumake, 2021.</h3>
-    </footer>
-  </body>
+    <aside id="whalefacts">
+      <h2>Whale Shark Facts</h2>
+      <p>&bullet; The whale shark is the largest fish in the world and the largest fish known to have lived on this planet.
+        Because of its size and cartilaginous skeleton, it does not fossilize well and in life it is very difficult to
+        weigh accurately.</p>
+      <p>&bullet; Whale shark has a two-toned pattern of light spots on its dark gray back with a white underside.</p>
+      <p>&bullet; Teeth of the whale shark are tiny and pointed backward; they are thought to have no function in feeding.</p>
+
+      <img src="images/whale.png" alt="Whale Shark Icon">
+    </aside>
+
+  </div>
+
+
+
+  <footer>
+    <h3>Designed by Kaitlin Shumake, 2021.</h3>
+  </footer>
+
+  <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Include the Sidr JS -->
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+</body>
 </html>

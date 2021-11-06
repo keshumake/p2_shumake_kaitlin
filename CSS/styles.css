@@ -1,86 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo&family=Varela+Round&display=swap");
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,
+dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -91,8 +15,7 @@ video {
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
-details,
-figcaption,
+details,figcaption,
 figure,
 footer,
 header,
@@ -160,17 +83,7 @@ nav {
   padding: 2rem;
 }
 
-nav ul {
-  float: right;
-}
-
-nav li {
-  margin-left: 1em;
-  padding: 1em;
-  vertical-align: center;
-  display: inline;
-  background-color: #0188d1;
-  border-radius: 1rem;
+nav a {
   color: #ffffff;
   font-family: "Varela Round", sans-serif;
   text-transform: lowercase;
@@ -183,10 +96,15 @@ nav a:active {
 }
 
 .otherheader {
+  display: flex;
+  width: 100%;
   background-color: #0188d1;
   min-height: 150px;
   margin-bottom: 2rem;
   padding: 1rem 0;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* main content home page */
@@ -232,7 +150,6 @@ nav a:active {
   padding: 1em 2em;
   border-radius: 1em;
   margin: 2em 1em;
-
 }
 
 aside h2,
@@ -263,7 +180,7 @@ aside p {
 }
 
 .photos {
-  display: flex;  
+  display: flex;
   padding: 0px;
   margin: 2em 1em;
   align-items: stretch;
@@ -286,27 +203,24 @@ aside p {
 /* about page */
 
 #aboutcontainer {
-  width: 100%;
-  margin: 0 auto;
   min-height: 750px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em;
 }
 
-.aboutpage {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
+.aboutpage, #whalefacts {
   background-color: #e0e0e0;
   font-size: 0.875rem;
   line-height: 1.25em;
   padding: 2%;
   border-radius: 1em;
+  flex-shrink: 2;
 }
 
-.aboutpage::after {
-  content: "";
-  clear: both;
-  display: table;
+#whalefacts {
+  padding-left: 1em;
 }
 
 .aboutpage #sideimage {
@@ -315,7 +229,7 @@ aside p {
   padding-right: 2%;
 }
 
-.aboutpage p {
+.aboutpage p, #whalefacts p {
   padding-bottom: 2%;
 }
 
@@ -341,6 +255,10 @@ figcaption {
   font-size: 0.875rem;
 }
 
+#whalefacts img {
+  width: 50%;
+}
+
 /* footer */
 
 footer {
@@ -358,7 +276,56 @@ footer h3 {
   padding: 2%;
 }
 
+
+
+
+
 /* media queries */
+
+@media screen and (min-width: 320px) {
+  .topnav {
+    background-color: #0188d1;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2em 1em;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+  .topnav a:hover {
+    background-color: #7fffd4;
+    color: #000;
+  }
+
+  .topnav a.active {
+    background-color: #7daac3;
+    color: #fff;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  #aboutcontainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+
+}
 
 @media screen and (min-width: 750px) {
   .container {
@@ -372,5 +339,13 @@ footer h3 {
 
   .textbox {
     flex: 50%;
+  }
+
+  #aboutcontainer {
+    flex-direction: row;
+  }
+
+  #whalefacts {
+    margin-left: 1em;
   }
 }
