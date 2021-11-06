@@ -1,10 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo&family=Varela+Round&display=swap");
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
-big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,
-dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
-canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
-time,mark,audio,video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,7 +91,8 @@ time,mark,audio,video {
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
-details,figcaption,
+details,
+figcaption,
 figure,
 footer,
 header,
@@ -154,7 +231,8 @@ nav a:active {
 
 aside h2,
 .textbox h2,
-.aboutpage h2 {
+.aboutpage h2,
+.gallery h2 {
   font-family: "Varela Round", sans-serif;
   color: #0188d1;
   text-transform: uppercase;
@@ -210,7 +288,8 @@ aside p {
   padding: 1em;
 }
 
-.aboutpage, #whalefacts {
+.aboutpage,
+#whalefacts {
   background-color: #e0e0e0;
   font-size: 0.875rem;
   line-height: 1.25em;
@@ -229,7 +308,8 @@ aside p {
   padding-right: 2%;
 }
 
-.aboutpage p, #whalefacts p {
+.aboutpage p,
+#whalefacts p {
   padding-bottom: 2%;
 }
 
@@ -257,6 +337,35 @@ figcaption {
 
 #whalefacts img {
   width: 50%;
+  max-width: 600px;
+}
+
+/* gallery page */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #e0e0e0;
+  padding: 3em;
+  margin: 1em 2em;
+  border-radius: 8px;
+}
+
+.gallery a {
+  padding: 4px;
+}
+
+.gallery h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.gallery img {
+  width: 10rem;
+  border-radius: 8px;
 }
 
 /* footer */
@@ -264,7 +373,8 @@ figcaption {
 footer {
   clear: both;
   margin-top: 2rem;
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 
 footer h3 {
@@ -275,10 +385,6 @@ footer h3 {
   color: #e0e0e0;
   padding: 2%;
 }
-
-
-
-
 
 /* media queries */
 
@@ -315,16 +421,24 @@ footer h3 {
   #aboutcontainer {
     flex-direction: column;
   }
+
+  aside#whalefacts {
+    margin-top: 1em;
+}
+
+#whalefacts img {
+  float: right;
+}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
   }
-
-
 }
 
 @media screen and (min-width: 750px) {
