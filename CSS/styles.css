@@ -178,7 +178,7 @@ header h1 {
 }
 
 .topnav a.active {
-  background-color: #7daac3;
+  background-color: #0188d1;
   color: #fff;
 }
 
@@ -372,6 +372,7 @@ figcaption {
 
 iframe.ui-droppable {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 
@@ -422,7 +423,7 @@ iframe.ui-droppable {
   padding-bottom: 1em;
 }
 
-.links h1 {
+.links h3 {
   font-family: "Varela Round", sans-serif;
   color: #0188d1;
   text-transform: uppercase;
@@ -502,7 +503,7 @@ footer h3 {
 }
 
 img {
-  width: 100%;
+  max-width: 300px;
 }
 
 #whalefacts img {
@@ -517,7 +518,9 @@ img {
   }
 
   .gallery {
-    min-height: ;
+    max-width: 750px;
+    min-height: 800px;
+    margin: 0 auto;
   }
 
   .maincontent, .links {
@@ -540,7 +543,7 @@ img {
     width: 15em;
   }
 
-  .topnav .icon, .topnav a:active {
+  .topnav .icon {
     display: none;
   }
 }
